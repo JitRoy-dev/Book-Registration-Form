@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body{
+    background: linear-gradient(in lch, #63e7e3 0%, #840786 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(in lch, #e76363 30%, #840786 70%);
+    width: 320px;
+    height: 280px;
+
+    &:hover{
+        box-shadow: 0 0 5px #e577e9,
+                    0 0 20px #e577e9,
+                    0 0 50px #e577e9,
+                    0 0 200px #e577e9;
+        border-radius: 6px;
+    }
+}
+
+form h2{
+    font-size: 2em;
+    padding: 8px;
+}
+
+form .info label{
+    font-size: 1.1em;
+    padding-bottom: 4px;
+}
+
+form .info input[type="text"],
+form .info input[type="password"]{
+    /* padding: 6px; */
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    outline: 3px solid #fff;
+    font-size: 1.1em;
+}
+
+form .info input[type="text"]:valid,
+form .info input[type="password"]:valid{
+    outline-color: #0f0;
+}
+
+form .info input[type="text"]:invalid,
+form .info input[type="password"]:invalid{
+    outline-color: #f00;
+}
+
+form p{
+    font-size: 0.9em;
+}
+
+form p a{
+    color: rgb(121, 218, 238);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+form .btn{
+    padding: 8px;
+}
+
+form .btn button{
+    font-size: 1.08em;
+    width: 120px;
+    height: 30px;
+    font-weight: 600;
+    background: rgb(4, 4, 145);
+    color: #fff;
+    border: 2px solid rgb(4, 4, 145);
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border-radius: 5px;
+
+    &:hover{
+        color: rgb(4, 4, 145);
+        background: #fff;
+        cursor: pointer;
+    }
+}

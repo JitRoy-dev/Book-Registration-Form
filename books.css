@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #1b2631;
+}
+
+form{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 450px;
+    height: 510px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: linear-gradient(in lch, #e16935, rgb(61, 176, 230));
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        background: #344ce8;
+        z-index: -1;
+    }
+}
+
+form .text{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+form .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+form .info label{
+    color: #fff;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+form .info input[type="text"]{
+    width: 100%;
+    height: 30px;
+    outline: 2px solid #f00;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+form .info input[type="text"]:valid{
+    outline-color: #0f0;
+}
+
+form .info input[type="text"]:invalid{
+    outline-color: #f00;
+}
+
+form .btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4px;
+}
+
+form .btn button{
+    width: 70px;
+    height: 28px;
+    font-size: 1.01em;
+    font-weight: 600;
+    color: #fff;
+    background: #022973;
+    border: 2px solid #022973;
+    border-radius: 5px;
+    transition: 0.5s;
+
+    &:hover{
+        color: #022973;
+        background: #fff;
+        cursor: pointer;
+    }
+}
+
+.tab{
+    padding: 10px;
+    color: #fff;
+}
+
+.tab table{
+    border-color: #a6bfee;
+    text-align: center;
+}
+
+.tab table th,
+.tab table td{
+    padding: 0 8px;
+}
+
+.logout{
+    padding: 6px;
+    background: #e16935;
+    border-radius: 5px;
+}
+
+.logout a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
